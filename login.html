@@ -1,0 +1,35 @@
+<!--
+	UTS Pemrograman Web
+	Nama : Yovie Pradea Sandiana
+	NPM : 217006081
+	Kelas : C
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Form</title>
+	<link href="bootstrap.css" rel="stylesheet">
+</head>
+<body>
+	<body style="background:#2e2e2e;color:#fff;"></body>
+	<div id="login-page" style="padding-top:3pc;">
+		<div class="container">
+			<div class="form-login">
+		        <h2 class="form-login-heading">Login Form</h2>
+		        <div class="login-wrap">
+		            <button class="btn btn-block" style="background:#0a4caf;color:#fff;" onclick="login()">Login</button>
+		        </div>
+			</div>
+	  	</div>
+	</div>
+</body>
+<script>
+function login() {
+    let username = prompt("Masukan Username");
+    let password = prompt("Masukan Password");
+    alert("Login Berhasil!");
+    window.location.href = "main.html";
+  }
+</script>
+</html>
+

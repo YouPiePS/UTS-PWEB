@@ -1,0 +1,58 @@
+<!--
+	UTS Pemrograman Web
+	Nama : Yovie Pradea Sandiana
+	NPM : 217006081
+	Kelas : C
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data Mahasiswa</title>
+	<link href="bootstrap.css" rel="stylesheet">
+</head>
+<body>
+	<body style="background:#2e2e2e;color:#fff;"></body>
+		<div class="container">
+		<form class="form" action="hasil.php" method="post">
+		<h2 class="form-heading">Input Data Mahasiswa</h2>
+		<div class="login-wrap">
+		<label for="npm" class="text">NPM:</label>
+		<input type="text" class="form-control" id="npm" name="npm" placeholder="Masukan NPM"><br><br>
+		<label for="nama" class="text">Nama:</label>
+		<input type="text" class="form-control" id="nama" name="nama" placeholder="Masukan Nama"><br><br>
+		<label for="alamat" class="text">Alamat:</label><br>
+		<textarea id="alamat" class="form-control" name="alamat" placeholder="Masukan Alamat"></textarea><br><br>
+		<label for="jk" class="text">Jenis Kelamin:</label><br>
+		<input type="radio" id="jk_l" name="jk" value="Laki-Laki">
+		<label for="jk_l" class="text1">Laki-laki</label><br>
+		<input type="radio" id="jk_p" name="jk" value="Perempuan">
+		<label for="jk_p" class="text1">Perempuan</label><br><br>
+		<label for="jurusan" class="text">Jurusan:</label>
+		<select id="jurusan" class="form-control" name="jurusan">
+			<option value="--">--</option>
+			<option value="Teknik Sipil">Teknik Sipil</option>
+			<option value="Teknik Elektro">Teknik Elektro</option>
+			<option value="Informatika">Informatika</option>
+			<option value="Sistem Informasi">Sistem Informasi</option>
+		</select><br><br>
+		<label for="angkatan" class="text">Angkatan:</label>
+		<select id="angkatan" class="form-control" name="angkatan">
+			<option value="--">--</option>
+			<option value="2018">2018</option>
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+		</select><br><br>
+		<button class="btn btn-block" style="background:#0a4caf;color:#fff;" type="submit">Simpan</button>
+	</form>
+	<script>
+		// konfirmasi sebelum submit
+		document.querySelector("form").addEventListener("submit", function(event) {
+			if (!confirm("Apakah anda yakin ingin menyimpan data?")) {
+				event.preventDefault();
+			}
+		});
+	</script>
+</body>
+</html>
